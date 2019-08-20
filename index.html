@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateMaLopHoc(lopHoc) {
+        let regexp = /^[ACP][0-9]{4}[GHIKLM]$/;
+        if (regexp.test(lopHoc)) {
+            return true;
+        }
+        return false;
+    }
+
+    // return true
+    let test = "C0318G";
+    console.log(validateMaLopHoc(test));
+    // return false
+    test = "M0318G";
+    console.log(validateMaLopHoc(test));
+</script>
+
+</body>
+</html>
